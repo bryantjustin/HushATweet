@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
+		14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
+		14E882FC17C3D5450002F900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FB17C3D5450002F900 /* CoreGraphics.framework */; };
+		14E882FE17C3D5450002F900 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FD17C3D5450002F900 /* CoreData.framework */; };
+		14E8830417C3D5450002F900 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14E8830217C3D5450002F900 /* InfoPlist.strings */; };
+		14E8830617C3D5450002F900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8830517C3D5450002F900 /* main.m */; };
+		14E8830A17C3D5450002F900 /* HATAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8830917C3D5450002F900 /* HATAppDelegate.m */; };
+		14E8830C17C3D5450002F900 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E8830B17C3D5450002F900 /* Default.png */; };
+		14E8830E17C3D5450002F900 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E8830D17C3D5450002F900 /* Default@2x.png */; };
+		14E8831017C3D5450002F900 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E8830F17C3D5450002F900 /* Default-568h@2x.png */; };
+		14E8831B17C3D5460002F900 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8831A17C3D5460002F900 /* SenTestingKit.framework */; };
+		14E8831C17C3D5460002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
+		14E8831D17C3D5460002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
+		14E8831E17C3D5460002F900 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FD17C3D5450002F900 /* CoreData.framework */; };
+		14E8832617C3D5460002F900 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14E8832417C3D5460002F900 /* InfoPlist.strings */; };
+		14E8832917C3D5460002F900 /* HushATweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8832817C3D5460002F900 /* HushATweetTests.m */; };
+		14E8834917C41ED60002F900 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8833417C41ED60002F900 /* FHSTwitterEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834A17C41ED60002F900 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8833817C41ED60002F900 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834B17C41ED60002F900 /* Base64TranscoderFHS.c in Sources */ = {isa = PBXBuildFile; fileRef = 14E8833A17C41ED60002F900 /* Base64TranscoderFHS.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834C17C41ED60002F900 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8833D17C41ED60002F900 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834D17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8833F17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834E17C41ED60002F900 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8834117C41ED60002F900 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8834F17C41ED60002F900 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8834317C41ED60002F900 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8835017C41ED60002F900 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8834517C41ED60002F900 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8835117C41ED60002F900 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8834717C41ED60002F900 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E8835417C423050002F900 /* HATViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8835317C423040002F900 /* HATViewController.m */; };
+		14E8835917C449AA0002F900 /* HATLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8835817C449AA0002F900 /* HATLoginView.m */; };
+		14E8835B17C502EA0002F900 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8835A17C502EA0002F900 /* SystemConfiguration.framework */; };
+		14E8836117C52CD90002F900 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8836017C52CD90002F900 /* LaunchView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14E8831F17C3D5460002F900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14E882EC17C3D5450002F900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14E882F317C3D5450002F900;
+			remoteInfo = FoodTruckFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14E882F417C3D5450002F900 /* HushATweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HushATweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E882F717C3D5450002F900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14E882F917C3D5450002F900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14E882FB17C3D5450002F900 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14E882FD17C3D5450002F900 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		14E8830117C3D5450002F900 /* HushATweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HushATweet-Info.plist"; sourceTree = "<group>"; };
+		14E8830317C3D5450002F900 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14E8830517C3D5450002F900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14E8830717C3D5450002F900 /* HushATweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HushATweet-Prefix.pch"; sourceTree = "<group>"; };
+		14E8830817C3D5450002F900 /* HATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HATAppDelegate.h; sourceTree = "<group>"; };
+		14E8830917C3D5450002F900 /* HATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HATAppDelegate.m; sourceTree = "<group>"; };
+		14E8830B17C3D5450002F900 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		14E8830D17C3D5450002F900 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		14E8830F17C3D5450002F900 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14E8831917C3D5460002F900 /* HushATweetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HushATweetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E8831A17C3D5460002F900 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		14E8832317C3D5460002F900 /* HushATweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HushATweetTests-Info.plist"; sourceTree = "<group>"; };
+		14E8832517C3D5460002F900 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14E8832717C3D5460002F900 /* HushATweetTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HushATweetTests.h; sourceTree = "<group>"; };
+		14E8832817C3D5460002F900 /* HushATweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HushATweetTests.m; sourceTree = "<group>"; };
+		14E8833317C41ED60002F900 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		14E8833417C41ED60002F900 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		14E8833717C41ED60002F900 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		14E8833817C41ED60002F900 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		14E8833A17C41ED60002F900 /* Base64TranscoderFHS.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64TranscoderFHS.c; sourceTree = "<group>"; };
+		14E8833B17C41ED60002F900 /* Base64TranscoderFHS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64TranscoderFHS.h; sourceTree = "<group>"; };
+		14E8833C17C41ED60002F900 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		14E8833D17C41ED60002F900 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		14E8833E17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		14E8833F17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		14E8834017C41ED60002F900 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		14E8834117C41ED60002F900 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		14E8834217C41ED60002F900 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		14E8834317C41ED60002F900 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		14E8834417C41ED60002F900 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		14E8834517C41ED60002F900 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		14E8834617C41ED60002F900 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		14E8834717C41ED60002F900 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		14E8834817C41ED60002F900 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		14E8835217C423040002F900 /* HATViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATViewController.h; path = ViewController/HATViewController.h; sourceTree = "<group>"; };
+		14E8835317C423040002F900 /* HATViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATViewController.m; path = ViewController/HATViewController.m; sourceTree = "<group>"; };
+		14E8835717C449AA0002F900 /* HATLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATLoginView.h; path = View/HATLoginView.h; sourceTree = "<group>"; };
+		14E8835817C449AA0002F900 /* HATLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATLoginView.m; path = View/HATLoginView.m; sourceTree = "<group>"; };
+		14E8835A17C502EA0002F900 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14E8835E17C505230002F900 /* HATConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATConstants.h; path = Core/HATConstants.h; sourceTree = "<group>"; };
+		14E8835F17C52CD90002F900 /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchView.h; path = View/LaunchView.h; sourceTree = "<group>"; };
+		14E8836017C52CD90002F900 /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchView.m; path = View/LaunchView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14E882F117C3D5450002F900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8835B17C502EA0002F900 /* SystemConfiguration.framework in Frameworks */,
+				14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */,
+				14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */,
+				14E882FC17C3D5450002F900 /* CoreGraphics.framework in Frameworks */,
+				14E882FE17C3D5450002F900 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8831517C3D5460002F900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8831B17C3D5460002F900 /* SenTestingKit.framework in Frameworks */,
+				14E8831C17C3D5460002F900 /* UIKit.framework in Frameworks */,
+				14E8831D17C3D5460002F900 /* Foundation.framework in Frameworks */,
+				14E8831E17C3D5460002F900 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E882EB17C3D5450002F900 = {
+			isa = PBXGroup;
+			children = (
+				14E8833217C41ED60002F900 /* FHSTwitterEngine */,
+				14E882FF17C3D5450002F900 /* HushATweet */,
+				14E8832117C3D5460002F900 /* HushATweetTests */,
+				14E882F617C3D5450002F900 /* Frameworks */,
+				14E882F517C3D5450002F900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14E882F517C3D5450002F900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14E882F417C3D5450002F900 /* HushATweet.app */,
+				14E8831917C3D5460002F900 /* HushATweetTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14E882F617C3D5450002F900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E8835A17C502EA0002F900 /* SystemConfiguration.framework */,
+				14E882F717C3D5450002F900 /* UIKit.framework */,
+				14E882F917C3D5450002F900 /* Foundation.framework */,
+				14E882FB17C3D5450002F900 /* CoreGraphics.framework */,
+				14E882FD17C3D5450002F900 /* CoreData.framework */,
+				14E8831A17C3D5460002F900 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14E882FF17C3D5450002F900 /* HushATweet */ = {
+			isa = PBXGroup;
+			children = (
+				14E8835C17C504950002F900 /* Core */,
+				14E8830817C3D5450002F900 /* HATAppDelegate.h */,
+				14E8830917C3D5450002F900 /* HATAppDelegate.m */,
+				14E8830017C3D5450002F900 /* Supporting Files */,
+				14E8835617C4493D0002F900 /* View */,
+				14E8835517C423090002F900 /* ViewController */,
+			);
+			path = HushATweet;
+			sourceTree = "<group>";
+		};
+		14E8830017C3D5450002F900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E8830117C3D5450002F900 /* HushATweet-Info.plist */,
+				14E8830217C3D5450002F900 /* InfoPlist.strings */,
+				14E8830517C3D5450002F900 /* main.m */,
+				14E8830717C3D5450002F900 /* HushATweet-Prefix.pch */,
+				14E8830B17C3D5450002F900 /* Default.png */,
+				14E8830D17C3D5450002F900 /* Default@2x.png */,
+				14E8830F17C3D5450002F900 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14E8832117C3D5460002F900 /* HushATweetTests */ = {
+			isa = PBXGroup;
+			children = (
+				14E8832717C3D5460002F900 /* HushATweetTests.h */,
+				14E8832817C3D5460002F900 /* HushATweetTests.m */,
+				14E8832217C3D5460002F900 /* Supporting Files */,
+			);
+			path = HushATweetTests;
+			sourceTree = "<group>";
+		};
+		14E8832217C3D5460002F900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E8832317C3D5460002F900 /* HushATweetTests-Info.plist */,
+				14E8832417C3D5460002F900 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14E8833217C41ED60002F900 /* FHSTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				14E8833317C41ED60002F900 /* FHSTwitterEngine.h */,
+				14E8833417C41ED60002F900 /* FHSTwitterEngine.m */,
+				14E8833517C41ED60002F900 /* OAuthConsumer */,
+			);
+			path = FHSTwitterEngine;
+			sourceTree = "<group>";
+		};
+		14E8833517C41ED60002F900 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				14E8833617C41ED60002F900 /* Categories */,
+				14E8833917C41ED60002F900 /* Crytpo */,
+				14E8833C17C41ED60002F900 /* OAConsumer.h */,
+				14E8833D17C41ED60002F900 /* OAConsumer.m */,
+				14E8833E17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.h */,
+				14E8833F17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m */,
+				14E8834017C41ED60002F900 /* OAMutableURLRequest.h */,
+				14E8834117C41ED60002F900 /* OAMutableURLRequest.m */,
+				14E8834217C41ED60002F900 /* OARequestParameter.h */,
+				14E8834317C41ED60002F900 /* OARequestParameter.m */,
+				14E8834417C41ED60002F900 /* OAServiceTicket.h */,
+				14E8834517C41ED60002F900 /* OAServiceTicket.m */,
+				14E8834617C41ED60002F900 /* OAToken.h */,
+				14E8834717C41ED60002F900 /* OAToken.m */,
+				14E8834817C41ED60002F900 /* OAuthConsumer.h */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		14E8833617C41ED60002F900 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				14E8833717C41ED60002F900 /* NSString+URLEncoding.h */,
+				14E8833817C41ED60002F900 /* NSString+URLEncoding.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		14E8833917C41ED60002F900 /* Crytpo */ = {
+			isa = PBXGroup;
+			children = (
+				14E8833A17C41ED60002F900 /* Base64TranscoderFHS.c */,
+				14E8833B17C41ED60002F900 /* Base64TranscoderFHS.h */,
+			);
+			path = Crytpo;
+			sourceTree = "<group>";
+		};
+		14E8835517C423090002F900 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14E8835217C423040002F900 /* HATViewController.h */,
+				14E8835317C423040002F900 /* HATViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		14E8835617C4493D0002F900 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14E8835717C449AA0002F900 /* HATLoginView.h */,
+				14E8835817C449AA0002F900 /* HATLoginView.m */,
+				14E8835F17C52CD90002F900 /* LaunchView.h */,
+				14E8836017C52CD90002F900 /* LaunchView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		14E8835C17C504950002F900 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				14E8835E17C505230002F900 /* HATConstants.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14E882F317C3D5450002F900 /* HushATweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E8832C17C3D5460002F900 /* Build configuration list for PBXNativeTarget "HushATweet" */;
+			buildPhases = (
+				14E882F017C3D5450002F900 /* Sources */,
+				14E882F117C3D5450002F900 /* Frameworks */,
+				14E882F217C3D5450002F900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HushATweet;
+			productName = FoodTruckFinder;
+			productReference = 14E882F417C3D5450002F900 /* HushATweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14E8831817C3D5460002F900 /* HushATweetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E8832F17C3D5460002F900 /* Build configuration list for PBXNativeTarget "HushATweetTests" */;
+			buildPhases = (
+				14E8831417C3D5460002F900 /* Sources */,
+				14E8831517C3D5460002F900 /* Frameworks */,
+				14E8831617C3D5460002F900 /* Resources */,
+				14E8831717C3D5460002F900 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14E8832017C3D5460002F900 /* PBXTargetDependency */,
+			);
+			name = HushATweetTests;
+			productName = FoodTruckFinderTests;
+			productReference = 14E8831917C3D5460002F900 /* HushATweetTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14E882EC17C3D5450002F900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HAT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bryant Balatbat";
+			};
+			buildConfigurationList = 14E882EF17C3D5450002F900 /* Build configuration list for PBXProject "HushATweet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14E882EB17C3D5450002F900;
+			productRefGroup = 14E882F517C3D5450002F900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14E882F317C3D5450002F900 /* HushATweet */,
+				14E8831817C3D5460002F900 /* HushATweetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14E882F217C3D5450002F900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8830417C3D5450002F900 /* InfoPlist.strings in Resources */,
+				14E8830C17C3D5450002F900 /* Default.png in Resources */,
+				14E8830E17C3D5450002F900 /* Default@2x.png in Resources */,
+				14E8831017C3D5450002F900 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8831617C3D5460002F900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8832617C3D5460002F900 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E8831717C3D5460002F900 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14E882F017C3D5450002F900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8830617C3D5450002F900 /* main.m in Sources */,
+				14E8834917C41ED60002F900 /* FHSTwitterEngine.m in Sources */,
+				14E8834A17C41ED60002F900 /* NSString+URLEncoding.m in Sources */,
+				14E8834B17C41ED60002F900 /* Base64TranscoderFHS.c in Sources */,
+				14E8834C17C41ED60002F900 /* OAConsumer.m in Sources */,
+				14E8834D17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				14E8834E17C41ED60002F900 /* OAMutableURLRequest.m in Sources */,
+				14E8834F17C41ED60002F900 /* OARequestParameter.m in Sources */,
+				14E8835017C41ED60002F900 /* OAServiceTicket.m in Sources */,
+				14E8835117C41ED60002F900 /* OAToken.m in Sources */,
+				14E8830A17C3D5450002F900 /* HATAppDelegate.m in Sources */,
+				14E8835417C423050002F900 /* HATViewController.m in Sources */,
+				14E8835917C449AA0002F900 /* HATLoginView.m in Sources */,
+				14E8836117C52CD90002F900 /* LaunchView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8831417C3D5460002F900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8832917C3D5460002F900 /* HushATweetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14E8832017C3D5460002F900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14E882F317C3D5450002F900 /* HushATweet */;
+			targetProxy = 14E8831F17C3D5460002F900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14E8830217C3D5450002F900 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14E8830317C3D5450002F900 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14E8832417C3D5460002F900 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14E8832517C3D5460002F900 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14E8832A17C3D5460002F900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14E8832B17C3D5460002F900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14E8832D17C3D5460002F900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HushATweet/HushATweet-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HushATweet/HushATweet-Info.plist";
+				PRODUCT_NAME = HushATweet;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14E8832E17C3D5460002F900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HushATweet/HushATweet-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HushATweet/HushATweet-Info.plist";
+				PRODUCT_NAME = HushATweet;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14E8833017C3D5460002F900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoodTruckFinder.app/FoodTruckFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodTruckFinder/FoodTruckFinder-Prefix.pch";
+				INFOPLIST_FILE = "FoodTruckFinderTests/HushATweetTests-Info.plist";
+				PRODUCT_NAME = HushATweetTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		14E8833117C3D5460002F900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoodTruckFinder.app/FoodTruckFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodTruckFinder/FoodTruckFinder-Prefix.pch";
+				INFOPLIST_FILE = "FoodTruckFinderTests/HushATweetTests-Info.plist";
+				PRODUCT_NAME = HushATweetTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14E882EF17C3D5450002F900 /* Build configuration list for PBXProject "HushATweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8832A17C3D5460002F900 /* Debug */,
+				14E8832B17C3D5460002F900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E8832C17C3D5460002F900 /* Build configuration list for PBXNativeTarget "HushATweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8832D17C3D5460002F900 /* Debug */,
+				14E8832E17C3D5460002F900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E8832F17C3D5460002F900 /* Build configuration list for PBXNativeTarget "HushATweetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8833017C3D5460002F900 /* Debug */,
+				14E8833117C3D5460002F900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14E882EC17C3D5450002F900 /* Project object */;
+}

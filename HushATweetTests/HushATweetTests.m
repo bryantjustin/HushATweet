@@ -1,14 +1,14 @@
 //
-//  FoodTruckFinderTests.m
-//  FoodTruckFinderTests
+//  HushATweetTests.m
+//  HushATweetTests
 //
 //  Created by Bryant Balatbat on 2013-08-20.
 //  Copyright (c) 2013 Bryant Balatbat. All rights reserved.
 //
 
-#import "FoodTruckFinderTests.h"
+#import "HushATweetTests.h"
 
-@implementation FoodTruckFinderTests
+@implementation HushATweetTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in FoodTruckFinderTests");
+    STFail(@"Unit tests are not implemented yet in HushATweetTests");
 }
 
 @end
