@@ -10,7 +10,9 @@
 #import "FHSTwitterEngine.h"
 #import "HATLoginView.h"
 #import "HATLaunchView.h"
+#import "HATGameView.h"
+#import "HATResultsView.h"
 
-@interface HATViewController : UIViewController <HATLoginViewDelegate, HATLaunchViewDelegate>
+@interface HATViewController : UIViewController <HATLoginViewDelegate, HATLaunchViewDelegate, HATGameViewDelegate>
 
 @end

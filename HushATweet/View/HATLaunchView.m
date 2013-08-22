@@ -33,6 +33,7 @@
 #pragma mark - Constructors & Initializers
 
 #pragma mark Convenience Constructors
+
 + (id) view
 {
     return [[self alloc] initWithFrame: CGRectZero andDelegate: nil];

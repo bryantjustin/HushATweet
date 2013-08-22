@@ -45,6 +45,7 @@
 
 #pragma mark - Synthesized properties
 
+@synthesize delegate = _delegate;
 @synthesize shouldPromptSearch = _shouldPromptSearch;
 
 #pragma mark - Dynamic properties
@@ -87,19 +88,21 @@
 
 #pragma mark Convenience constructors
 
-+ (id) viewWithFrame: (CGRect)frame andShouldPromptSearch: (BOOL)shouldPromptSearch
++ (id) viewWithFrame: (CGRect)frame withDelegate: (id<HATGameViewDelegate>)delegate andShouldPromptSearch: (BOOL)shouldPromptSearch
 {
-    return [[self alloc] initWithFrame: frame andShouldPromptSearch: shouldPromptSearch];
+    return [[self alloc] initWithFrame: frame withDelegate: delegate andShouldPromptSearch: shouldPromptSearch];
 }
 
 #pragma mark Initializers
 
-- (id) initWithFrame: (CGRect)frame andShouldPromptSearch: (BOOL)shouldPromptSearch;
+- (id) initWithFrame: (CGRect)frame withDelegate:(id<HATGameViewDelegate>)delegate andShouldPromptSearch: (BOOL)shouldPromptSearch;
 {
     self = [super initWithFrame:frame];
     if (self) {
         
+        self.delegate = delegate;
         self.shouldPromptSearch = shouldPromptSearch;
+        
         [self initMapView];
         [self initLocationManager];
         if( shouldPromptSearch ) {

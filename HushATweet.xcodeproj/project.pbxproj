@@ -12,6 +12,7 @@
 		14831D0217C64CE600C4492F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831D0117C64CE600C4492F /* CoreLocation.framework */; };
 		14831D0617C6750200C4492F /* HATMapPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */; };
 		14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0917C6794400C4492F /* HATAnnotation.m */; };
+		14831D0D17C6B59700C4492F /* HATResultsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0C17C6B59700C4492F /* HATResultsView.m */; };
 		14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
 		14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
 		14E882FC17C3D5450002F900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FB17C3D5450002F900 /* CoreGraphics.framework */; };
@@ -62,6 +63,8 @@
 		14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATMapPinAnnotationView.m; path = View/Map/HATMapPinAnnotationView.m; sourceTree = "<group>"; };
 		14831D0817C6794400C4492F /* HATAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATAnnotation.h; path = HushATweet/Data/HATAnnotation.h; sourceTree = "<group>"; };
 		14831D0917C6794400C4492F /* HATAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATAnnotation.m; path = HushATweet/Data/HATAnnotation.m; sourceTree = "<group>"; };
+		14831D0B17C6B59700C4492F /* HATResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATResultsView.h; path = View/HATResultsView.h; sourceTree = "<group>"; };
+		14831D0C17C6B59700C4492F /* HATResultsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATResultsView.m; path = View/HATResultsView.m; sourceTree = "<group>"; };
 		14E882F417C3D5450002F900 /* HushATweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HushATweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E882F717C3D5450002F900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14E882F917C3D5450002F900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -310,6 +313,8 @@
 				14E8836017C52CD90002F900 /* HATLaunchView.m */,
 				14831CFC17C5778800C4492F /* HATGameView.h */,
 				14831CFD17C5778800C4492F /* HATGameView.m */,
+				14831D0B17C6B59700C4492F /* HATResultsView.h */,
+				14831D0C17C6B59700C4492F /* HATResultsView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				14E8834B17C41ED60002F900 /* Base64TranscoderFHS.c in Sources */,
 				14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */,
 				14E8834C17C41ED60002F900 /* OAConsumer.m in Sources */,
+				14831D0D17C6B59700C4492F /* HATResultsView.m in Sources */,
 				14E8834D17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				14E8834E17C41ED60002F900 /* OAMutableURLRequest.m in Sources */,
 				14E8834F17C41ED60002F900 /* OARequestParameter.m in Sources */,

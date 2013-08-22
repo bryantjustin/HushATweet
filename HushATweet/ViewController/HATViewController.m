@@ -10,19 +10,13 @@
 
 #import "HATViewController.h"
 
-#import "HATGameView.h"
-#import "HATLoginView.h"
-#import "HATLaunchView.h"
-
 @implementation HATViewController
 {
     HATLoginView *loginView;
     HATLaunchView *launchView;
     HATGameView *gameView;
+    HATResultsView *resultsView;
 }
-
-#pragma mark - Synthesized properties
-
 
 #pragma mark - UIViewController methods
 
@@ -117,6 +111,14 @@
     
 }
 
+#pragma mark - HATGameViewDelegate methods
+
+- (void) endGameWithHushTotal: (int)hushTotal andScore: (int)score
+{
+    [self openResultsViewWithHushTotal: hushTotal andScore: score];
+    [self closeViewByFadeOut: gameView];
+}
+
 #pragma mark - View presentation methods
 
 - (void) openLoginView
@@ -133,8 +135,14 @@
 
 - (void) openGameViewWithSearchPrompt: (BOOL)shouldPromptSearch
 {
-    gameView = [HATGameView viewWithFrame: self.view.bounds andShouldPromptSearch: shouldPromptSearch];
+    gameView = [HATGameView viewWithFrame: self.view.bounds withDelegate: self andShouldPromptSearch: shouldPromptSearch];
     [self.view addSubview: gameView];
+}
+
+- (void) openResultsViewWithHushTotal: (int)hushTotal andScore: (int)score
+{
+    resultsView = [HATResultsView viewWithFrame: self.view.bounds andDelegate: self withHushTotal: hushTotal andScore: score];
+    [self.view addSubview: resultsView];
 }
 
 - (void) closeViewByFadeOut: (UIView *)closingView
@@ -145,6 +153,5 @@
         [closingView removeFromSuperview];
     }];
 }
-#pragma mark - Utility methods
 
 @end

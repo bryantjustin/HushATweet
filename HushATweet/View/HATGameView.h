@@ -9,13 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+@protocol HATGameViewDelegate <NSObject>
+
+- (void) endGameWithHushTotal: (int)hushTotal andScore: (int)score;
+
+@end
+
 @interface HATGameView : UIView <MKMapViewDelegate, CLLocationManagerDelegate>
 
+@property (weak, nonatomic) id<HATGameViewDelegate>delegate;
 @property (nonatomic) int hushTotal;
 @property (nonatomic) int score;
 @property (nonatomic) BOOL shouldPromptSearch;
 
-+ (id) viewWithFrame: (CGRect)frame andShouldPromptSearch: (BOOL)shouldPromptSearch;
-- (id) initWithFrame: (CGRect)frame andShouldPromptSearch: (BOOL)shouldPromptSearch;
++ (id) viewWithFrame: (CGRect)frame withDelegate: (id<HATGameViewDelegate>)delegate andShouldPromptSearch: (BOOL)shouldPromptSearch;
+- (id) initWithFrame: (CGRect)frame withDelegate: (id<HATGameViewDelegate>)delegate andShouldPromptSearch: (BOOL)shouldPromptSearch;
 
 @end
