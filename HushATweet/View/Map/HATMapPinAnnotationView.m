@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Bryant Balatbat. All rights reserved.
 //
 
-#import "HATMapPinAnnotation.h"
+#import "HATMapPinAnnotationView.h"
 #import "HATAnnotation.h"
-@implementation HATMapPinAnnotation
+@implementation HATMapPinAnnotationView
 {
     NSString *profileImageUrl;
 }
@@ -23,20 +23,14 @@
 @dynamic profileImageUrl;
 - (NSString *) profileImageUrl
 {
-    if( profileImageUrl == nil ) {
-        
-        if( self.tweet ) {
-        
-            NSDictionary * user = [self.tweet objectForKey: @"user"];
-            if( user ) {
-                profileImageUrl = [user objectForKey: @"profile_image_url"];
-            }
-            
+    if( self.tweet ) {
+        NSDictionary * user = [self.tweet objectForKey: @"user"];
+        if( user ) {
+            return [user objectForKey: @"profile_image_url"];
         }
-        
     }
     
-    return profileImageUrl;
+    return nil;
 }
 
 #pragma mark - MKAnnotationView methods

@@ -15,10 +15,10 @@
 
 @end
 
-@interface HATMapPinAnnotation : MKAnnotationView
+@interface HATMapPinAnnotationView : MKAnnotationView
 
 @property (weak, nonatomic) id<HATMapPinDelegate> delegate;
-@property (strong, nonatomic) NSDictionary *tweet;
+@property (weak, nonatomic) NSDictionary *tweet;
 @property (readonly, nonatomic) NSString *profileImageUrl;
 
 @end

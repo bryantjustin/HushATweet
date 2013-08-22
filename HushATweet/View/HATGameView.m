@@ -12,7 +12,7 @@
 #import "OARequestParameter.h"
 
 #import "HATAnnotation.h"
-#import "HATMapPinAnnotation.h"
+#import "HATMapPinAnnotationView.h"
 
 #pragma mark - Layout constants
 
@@ -382,9 +382,9 @@ static NSString *identifier = @"TweetLocation";
 {
     if( [annotation isKindOfClass: [HATAnnotation class]] ) {
      
-        HATMapPinAnnotation *annotationView = (HATMapPinAnnotation *) [map dequeueReusableAnnotationViewWithIdentifier: identifier];
+        HATMapPinAnnotationView *annotationView = (HATMapPinAnnotationView *) [map dequeueReusableAnnotationViewWithIdentifier: identifier];
         if (annotationView == nil) {
-            annotationView = [[HATMapPinAnnotation alloc] initWithAnnotation: annotation reuseIdentifier: identifier];
+            annotationView = [[HATMapPinAnnotationView alloc] initWithAnnotation: annotation reuseIdentifier: identifier];
         } else {
             annotationView.annotation = annotation;
         }
@@ -398,19 +398,37 @@ static NSString *identifier = @"TweetLocation";
 
 - (void) mapView: (MKMapView *)map didSelectAnnotationView: (MKAnnotationView *)view
 {
-    if( [view isKindOfClass: [HATMapPinAnnotation class]] ) {
+    if( [view isKindOfClass: [HATMapPinAnnotationView class]] ) {
         
-        HATMapPinAnnotation *pinAnnotationView = (HATMapPinAnnotation *)view;
+        HATMapPinAnnotationView *pinAnnotationView = (HATMapPinAnnotationView *)view;
+        
+        // Calculate score providing bonuses for retweets and favourites.
         
         NSDictionary *tweet = pinAnnotationView.tweet;
         NSString *text = [tweet objectForKey: @"text"];
-        int retweetBonus = [[tweet objectForKey: @"retweet_count"] intValue] * 10;
+        int retweetBonus = [[tweet objectForKey: @"retweet_count"] intValue] * 20;
         int favoriteBonus = [[tweet objectForKey: @"favourites_count"] intValue] * 10;
         
         self.score += ( text.length + retweetBonus + favoriteBonus );
         self.hushTotal++;
         
         [self displaceAnnotation: view.annotation];
+        
+    }
+}
+
+- (void)mapView: (MKMapView *)map didAddAnnotationViews: (NSArray *)views {
+    
+    for( MKAnnotationView *annotationView in views) {
+
+        CGRect endFrame = annotationView.frame;
+        annotationView.frame = CGRectMake( annotationView.frame.origin.x, CGRectGetMinY( annotationView.frame ) - CGRectGetHeight( self.frame ), CGRectGetWidth( annotationView.frame ), CGRectGetHeight( annotationView.frame ));
+        
+        [UIView beginAnimations: nil context:NULL];
+        [UIView setAnimationDuration: 0.45];
+        [UIView setAnimationCurve: UIViewAnimationCurveEaseInOut];
+        [annotationView setFrame: endFrame];
+        [UIView commitAnimations];
         
     }
 }

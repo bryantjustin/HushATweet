@@ -10,7 +10,7 @@
 		14831CFE17C5778800C4492F /* HATGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831CFD17C5778800C4492F /* HATGameView.m */; };
 		14831D0017C5B6C800C4492F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831CFF17C5B6C800C4492F /* MapKit.framework */; };
 		14831D0217C64CE600C4492F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831D0117C64CE600C4492F /* CoreLocation.framework */; };
-		14831D0617C6750200C4492F /* HATMapPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0517C6750200C4492F /* HATMapPinAnnotation.m */; };
+		14831D0617C6750200C4492F /* HATMapPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */; };
 		14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0917C6794400C4492F /* HATAnnotation.m */; };
 		14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
 		14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
@@ -58,8 +58,8 @@
 		14831CFD17C5778800C4492F /* HATGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATGameView.m; path = View/HATGameView.m; sourceTree = "<group>"; };
 		14831CFF17C5B6C800C4492F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		14831D0117C64CE600C4492F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		14831D0417C6750200C4492F /* HATMapPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATMapPinAnnotation.h; path = View/Map/HATMapPinAnnotation.h; sourceTree = "<group>"; };
-		14831D0517C6750200C4492F /* HATMapPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATMapPinAnnotation.m; path = View/Map/HATMapPinAnnotation.m; sourceTree = "<group>"; };
+		14831D0417C6750200C4492F /* HATMapPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATMapPinAnnotationView.h; path = View/Map/HATMapPinAnnotationView.h; sourceTree = "<group>"; };
+		14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATMapPinAnnotationView.m; path = View/Map/HATMapPinAnnotationView.m; sourceTree = "<group>"; };
 		14831D0817C6794400C4492F /* HATAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATAnnotation.h; path = HushATweet/Data/HATAnnotation.h; sourceTree = "<group>"; };
 		14831D0917C6794400C4492F /* HATAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATAnnotation.m; path = HushATweet/Data/HATAnnotation.m; sourceTree = "<group>"; };
 		14E882F417C3D5450002F900 /* HushATweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HushATweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,8 +143,8 @@
 		14831D0317C673F400C4492F /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				14831D0417C6750200C4492F /* HATMapPinAnnotation.h */,
-				14831D0517C6750200C4492F /* HATMapPinAnnotation.m */,
+				14831D0417C6750200C4492F /* HATMapPinAnnotationView.h */,
+				14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				14E8835117C41ED60002F900 /* OAToken.m in Sources */,
 				14E8830A17C3D5450002F900 /* HATAppDelegate.m in Sources */,
 				14E8835417C423050002F900 /* HATViewController.m in Sources */,
-				14831D0617C6750200C4492F /* HATMapPinAnnotation.m in Sources */,
+				14831D0617C6750200C4492F /* HATMapPinAnnotationView.m in Sources */,
 				14E8835917C449AA0002F900 /* HATLoginView.m in Sources */,
 				14E8836117C52CD90002F900 /* HATLaunchView.m in Sources */,
 			);

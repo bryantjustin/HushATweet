@@ -21,7 +21,7 @@
 #pragma mark - Twitter query constants
 
 #define QUERY_DEFAULT_GEOCODE @"46.0730555556,-100.546666667,3957mi" // This is the middle of North America, somewhere in North Dakota. Use the half the diameter of th earth as radius, it'll be overkill.
-#define QUERY_DEFAULT_WOEID @"1"
+#define QUERY_DEFAULT_WOEID @"2450022"
 #define QUERY_SEARCH_COUNT 100
 
 #pragma mark - Game engine
