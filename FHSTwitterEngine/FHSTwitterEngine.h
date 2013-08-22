@@ -293,7 +293,7 @@ extern NSString * const FHSProfileDescriptionKey;
 - (NSError *)createListWithName:(NSString *)name isPrivate:(BOOL)isPrivate description:(NSString *)description;
 
 // tweets/search
-- (id)searchTweetsWithQuery:(NSString *)q count:(int)count resultType:(FHSTwitterEngineResultType)resultType unil:(NSDate *)untilDate sinceID:(NSString *)sinceID maxID:(NSString *)maxID;
+- (id)searchTweetsWithQuery:(NSString *)q count:(int)count resultType:(FHSTwitterEngineResultType)resultType until:(NSDate *)untilDate sinceID:(NSString *)sinceID maxID:(NSString *)maxID fromLocation: (NSString *)location;
 
 // followers/ids
 - (id)getFollowersIDs;
@@ -306,6 +306,9 @@ extern NSString * const FHSProfileDescriptionKey;
 
 // friends/list
 - (id)listFriendsForUser:(NSString *)user isID:(BOOL)isID withCursor:(NSString *)cursor;
+
+// trends/place
+- (id) getTrendsForLocation: (NSString *)woeid;
 
 //
 // Login and Auth

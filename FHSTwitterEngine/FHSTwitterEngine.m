@@ -221,6 +221,10 @@ static NSString * const url_followers_list = @"https://api.twitter.com/1.1/follo
 static NSString * const url_friends_ids = @"https://api.twitter.com/1.1/friends/ids.json";
 static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends/list.json";
 
+static NSString * const url_trends_place = @"https://api.twitter.com/1.1/trends/place.json";
+static NSString * const url_trends_available = @"https://api.twitter.com/1.1/trends/available.json";
+static NSString * const url_trends_closest = @"https://api.twitter.com/1.1/trends/closest.json";
+
 - (id)listFollowersForUser:(NSString *)user isID:(BOOL)isID withCursor:(NSString *)cursor {
     
     if (user.length == 0) {
@@ -273,7 +277,7 @@ static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends
     return [self sendGETRequest:request withParameters:[NSArray arrayWithObjects:include_entitiesP, countP, qP, nil]];
 }
 
-- (id)searchTweetsWithQuery:(NSString *)q count:(int)count resultType:(FHSTwitterEngineResultType)resultType unil:(NSDate *)untilDate sinceID:(NSString *)sinceID maxID:(NSString *)maxID {
+- (id)searchTweetsWithQuery:(NSString *)q count:(int)count resultType:(FHSTwitterEngineResultType)resultType until:(NSDate *)untilDate sinceID:(NSString *)sinceID maxID:(NSString *)maxID fromLocation: (NSString *)location {
     
     if (count == 0) {
         return nil;
@@ -294,6 +298,7 @@ static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends
     OARequestParameter *untilP = [OARequestParameter requestParameterWithName:@"until" value:nil];
     OARequestParameter *result_typeP = [OARequestParameter requestParameterWithName:@"result_type" value:nil];
     OARequestParameter *qP = [OARequestParameter requestParameterWithName:@"q" value:q];
+    OARequestParameter *locationP = [OARequestParameter requestParameterWithName:@"geocode" value: location];
     
     [self.dateFormatter setDateFormat:@"YYYY-MM-DD"];
     NSString *untilString = [self.dateFormatter stringFromDate:untilDate];
@@ -309,7 +314,7 @@ static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends
         result_typeP.value = @"popular";
     }
     
-    NSMutableArray *params = [NSMutableArray arrayWithObjects:countP, include_entitiesP, qP, nil];
+    NSMutableArray *params = [NSMutableArray arrayWithObjects:countP, include_entitiesP, qP, locationP, nil];
     
     if (maxID.length > 0) {
         [params addObject:[OARequestParameter requestParameterWithName:@"max_id" value:maxID]];
@@ -352,6 +357,14 @@ static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends
     OAMutableURLRequest *request = [OAMutableURLRequest requestWithURL:baseURL consumer:self.consumer token:self.accessToken];
     OARequestParameter *listIDP = [OARequestParameter requestParameterWithName:@"list_id" value:listID];
     return [self sendGETRequest:request withParameters:[NSArray arrayWithObjects:listIDP, nil]];
+}
+
+- (id) getTrendsForLocation: (NSString *)woeid
+{
+    NSURL *baseURL = [NSURL URLWithString: url_trends_place];
+    OAMutableURLRequest *request = [OAMutableURLRequest requestWithURL: baseURL consumer: self.consumer token: self.accessToken];
+    OARequestParameter *parameter = [OARequestParameter requestParameterWithName: @"id" value: woeid];
+    return [self sendGETRequest:request withParameters :@[ parameter ]];
 }
 
 - (NSError *)changeDescriptionOfListWithID:(NSString *)listID toDescription:(NSString *)newName {

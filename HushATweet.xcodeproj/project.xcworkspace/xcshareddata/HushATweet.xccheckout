@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>854198CB-16D0-4B5A-B830-5C44A02B7965</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HushATweet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF017418-9AF3-493D-A97A-D168AC4A0169</key>
+		<string>https://github.com/bryantjustin/HushATweet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HushATweet.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF017418-9AF3-493D-A97A-D168AC4A0169</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bryantjustin/HushATweet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF017418-9AF3-493D-A97A-D168AC4A0169</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF017418-9AF3-493D-A97A-D168AC4A0169</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HushATweet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

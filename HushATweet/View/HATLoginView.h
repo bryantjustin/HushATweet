@@ -16,7 +16,7 @@
 
 @interface HATLoginView : UIView
 
-@property (strong, nonatomic) id<HATLoginViewDelegate> delegate;
+@property (weak, nonatomic) id<HATLoginViewDelegate> delegate;
 
 + (id) view;
 + (id) viewWithFrame: (CGRect)frame andDelegate: (id<HATLoginViewDelegate>)delegate;

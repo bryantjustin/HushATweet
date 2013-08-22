@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14831CFE17C5778800C4492F /* HATGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831CFD17C5778800C4492F /* HATGameView.m */; };
+		14831D0017C5B6C800C4492F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831CFF17C5B6C800C4492F /* MapKit.framework */; };
+		14831D0217C64CE600C4492F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831D0117C64CE600C4492F /* CoreLocation.framework */; };
+		14831D0617C6750200C4492F /* HATMapPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0517C6750200C4492F /* HATMapPinAnnotation.m */; };
+		14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0917C6794400C4492F /* HATAnnotation.m */; };
 		14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
 		14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
 		14E882FC17C3D5450002F900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FB17C3D5450002F900 /* CoreGraphics.framework */; };
@@ -35,7 +40,7 @@
 		14E8835417C423050002F900 /* HATViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8835317C423040002F900 /* HATViewController.m */; };
 		14E8835917C449AA0002F900 /* HATLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8835817C449AA0002F900 /* HATLoginView.m */; };
 		14E8835B17C502EA0002F900 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8835A17C502EA0002F900 /* SystemConfiguration.framework */; };
-		14E8836117C52CD90002F900 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8836017C52CD90002F900 /* LaunchView.m */; };
+		14E8836117C52CD90002F900 /* HATLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8836017C52CD90002F900 /* HATLaunchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14831CFC17C5778800C4492F /* HATGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATGameView.h; path = View/HATGameView.h; sourceTree = "<group>"; };
+		14831CFD17C5778800C4492F /* HATGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATGameView.m; path = View/HATGameView.m; sourceTree = "<group>"; };
+		14831CFF17C5B6C800C4492F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		14831D0117C64CE600C4492F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14831D0417C6750200C4492F /* HATMapPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATMapPinAnnotation.h; path = View/Map/HATMapPinAnnotation.h; sourceTree = "<group>"; };
+		14831D0517C6750200C4492F /* HATMapPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATMapPinAnnotation.m; path = View/Map/HATMapPinAnnotation.m; sourceTree = "<group>"; };
+		14831D0817C6794400C4492F /* HATAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATAnnotation.h; path = HushATweet/Data/HATAnnotation.h; sourceTree = "<group>"; };
+		14831D0917C6794400C4492F /* HATAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATAnnotation.m; path = HushATweet/Data/HATAnnotation.m; sourceTree = "<group>"; };
 		14E882F417C3D5450002F900 /* HushATweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HushATweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E882F717C3D5450002F900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14E882F917C3D5450002F900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,8 +107,8 @@
 		14E8835817C449AA0002F900 /* HATLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATLoginView.m; path = View/HATLoginView.m; sourceTree = "<group>"; };
 		14E8835A17C502EA0002F900 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		14E8835E17C505230002F900 /* HATConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATConstants.h; path = Core/HATConstants.h; sourceTree = "<group>"; };
-		14E8835F17C52CD90002F900 /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchView.h; path = View/LaunchView.h; sourceTree = "<group>"; };
-		14E8836017C52CD90002F900 /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchView.m; path = View/LaunchView.m; sourceTree = "<group>"; };
+		14E8835F17C52CD90002F900 /* HATLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATLaunchView.h; path = View/HATLaunchView.h; sourceTree = "<group>"; };
+		14E8836017C52CD90002F900 /* HATLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATLaunchView.m; path = View/HATLaunchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14831D0217C64CE600C4492F /* CoreLocation.framework in Frameworks */,
+				14831D0017C5B6C800C4492F /* MapKit.framework in Frameworks */,
 				14E8835B17C502EA0002F900 /* SystemConfiguration.framework in Frameworks */,
 				14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */,
 				14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */,
@@ -125,13 +140,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14831D0317C673F400C4492F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				14831D0417C6750200C4492F /* HATMapPinAnnotation.h */,
+				14831D0517C6750200C4492F /* HATMapPinAnnotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		14831D0717C678CB00C4492F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				14831D0817C6794400C4492F /* HATAnnotation.h */,
+				14831D0917C6794400C4492F /* HATAnnotation.m */,
+			);
+			name = Data;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		14E882EB17C3D5450002F900 = {
 			isa = PBXGroup;
 			children = (
 				14E8833217C41ED60002F900 /* FHSTwitterEngine */,
+				14E882F617C3D5450002F900 /* Frameworks */,
 				14E882FF17C3D5450002F900 /* HushATweet */,
 				14E8832117C3D5460002F900 /* HushATweetTests */,
-				14E882F617C3D5450002F900 /* Frameworks */,
 				14E882F517C3D5450002F900 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,12 +182,14 @@
 		14E882F617C3D5450002F900 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14831D0117C64CE600C4492F /* CoreLocation.framework */,
+				14E882FD17C3D5450002F900 /* CoreData.framework */,
+				14E882FB17C3D5450002F900 /* CoreGraphics.framework */,
+				14E882F917C3D5450002F900 /* Foundation.framework */,
+				14831CFF17C5B6C800C4492F /* MapKit.framework */,
+				14E8831A17C3D5460002F900 /* SenTestingKit.framework */,
 				14E8835A17C502EA0002F900 /* SystemConfiguration.framework */,
 				14E882F717C3D5450002F900 /* UIKit.framework */,
-				14E882F917C3D5450002F900 /* Foundation.framework */,
-				14E882FB17C3D5450002F900 /* CoreGraphics.framework */,
-				14E882FD17C3D5450002F900 /* CoreData.framework */,
-				14E8831A17C3D5460002F900 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				14E8835C17C504950002F900 /* Core */,
+				14831D0717C678CB00C4492F /* Data */,
 				14E8830817C3D5450002F900 /* HATAppDelegate.h */,
 				14E8830917C3D5450002F900 /* HATAppDelegate.m */,
 				14E8830017C3D5450002F900 /* Supporting Files */,
@@ -266,10 +303,13 @@
 		14E8835617C4493D0002F900 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14831D0317C673F400C4492F /* Map */,
 				14E8835717C449AA0002F900 /* HATLoginView.h */,
 				14E8835817C449AA0002F900 /* HATLoginView.m */,
-				14E8835F17C52CD90002F900 /* LaunchView.h */,
-				14E8836017C52CD90002F900 /* LaunchView.m */,
+				14E8835F17C52CD90002F900 /* HATLaunchView.h */,
+				14E8836017C52CD90002F900 /* HATLaunchView.m */,
+				14831CFC17C5778800C4492F /* HATGameView.h */,
+				14831CFD17C5778800C4492F /* HATGameView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -330,6 +370,11 @@
 				CLASSPREFIX = HAT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Bryant Balatbat";
+				TargetAttributes = {
+					14E882F317C3D5450002F900 = {
+						DevelopmentTeam = C3SHBAHF2S;
+					};
+				};
 			};
 			buildConfigurationList = 14E882EF17C3D5450002F900 /* Build configuration list for PBXProject "HushATweet" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -393,9 +438,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E8830617C3D5450002F900 /* main.m in Sources */,
+				14831CFE17C5778800C4492F /* HATGameView.m in Sources */,
 				14E8834917C41ED60002F900 /* FHSTwitterEngine.m in Sources */,
 				14E8834A17C41ED60002F900 /* NSString+URLEncoding.m in Sources */,
 				14E8834B17C41ED60002F900 /* Base64TranscoderFHS.c in Sources */,
+				14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */,
 				14E8834C17C41ED60002F900 /* OAConsumer.m in Sources */,
 				14E8834D17C41ED60002F900 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				14E8834E17C41ED60002F900 /* OAMutableURLRequest.m in Sources */,
@@ -404,8 +451,9 @@
 				14E8835117C41ED60002F900 /* OAToken.m in Sources */,
 				14E8830A17C3D5450002F900 /* HATAppDelegate.m in Sources */,
 				14E8835417C423050002F900 /* HATViewController.m in Sources */,
+				14831D0617C6750200C4492F /* HATMapPinAnnotation.m in Sources */,
 				14E8835917C449AA0002F900 /* HATLoginView.m in Sources */,
-				14E8836117C52CD90002F900 /* LaunchView.m in Sources */,
+				14E8836117C52CD90002F900 /* HATLaunchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +507,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -490,7 +538,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -506,10 +554,13 @@
 		14E8832D17C3D5460002F900 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HushATweet/HushATweet-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HushATweet/HushATweet-Info.plist";
 				PRODUCT_NAME = HushATweet;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -517,10 +568,13 @@
 		14E8832E17C3D5460002F900 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HushATweet/HushATweet-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HushATweet/HushATweet-Info.plist";
 				PRODUCT_NAME = HushATweet;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
