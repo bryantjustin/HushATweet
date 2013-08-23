@@ -103,7 +103,7 @@
 
 - (void) viewProfile
 {
-    
+    [self openResultsViewWithHushTotal: 100 andScore: 10000];
 }
 
 - (void) performLogout

@@ -13,6 +13,7 @@
 		14831D0617C6750200C4492F /* HATMapPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0517C6750200C4492F /* HATMapPinAnnotationView.m */; };
 		14831D0A17C6794400C4492F /* HATAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0917C6794400C4492F /* HATAnnotation.m */; };
 		14831D0D17C6B59700C4492F /* HATResultsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14831D0C17C6B59700C4492F /* HATResultsView.m */; };
+		14831D0F17C6F33C00C4492F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14831D0E17C6F33C00C4492F /* QuartzCore.framework */; };
 		14E882F817C3D5450002F900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F717C3D5450002F900 /* UIKit.framework */; };
 		14E882FA17C3D5450002F900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882F917C3D5450002F900 /* Foundation.framework */; };
 		14E882FC17C3D5450002F900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E882FB17C3D5450002F900 /* CoreGraphics.framework */; };
@@ -65,6 +66,7 @@
 		14831D0917C6794400C4492F /* HATAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATAnnotation.m; path = HushATweet/Data/HATAnnotation.m; sourceTree = "<group>"; };
 		14831D0B17C6B59700C4492F /* HATResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HATResultsView.h; path = View/HATResultsView.h; sourceTree = "<group>"; };
 		14831D0C17C6B59700C4492F /* HATResultsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HATResultsView.m; path = View/HATResultsView.m; sourceTree = "<group>"; };
+		14831D0E17C6F33C00C4492F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		14E882F417C3D5450002F900 /* HushATweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HushATweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E882F717C3D5450002F900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14E882F917C3D5450002F900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14831D0F17C6F33C00C4492F /* QuartzCore.framework in Frameworks */,
 				14831D0217C64CE600C4492F /* CoreLocation.framework in Frameworks */,
 				14831D0017C5B6C800C4492F /* MapKit.framework in Frameworks */,
 				14E8835B17C502EA0002F900 /* SystemConfiguration.framework in Frameworks */,
@@ -185,11 +188,12 @@
 		14E882F617C3D5450002F900 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14831D0117C64CE600C4492F /* CoreLocation.framework */,
 				14E882FD17C3D5450002F900 /* CoreData.framework */,
 				14E882FB17C3D5450002F900 /* CoreGraphics.framework */,
+				14831D0117C64CE600C4492F /* CoreLocation.framework */,
 				14E882F917C3D5450002F900 /* Foundation.framework */,
 				14831CFF17C5B6C800C4492F /* MapKit.framework */,
+				14831D0E17C6F33C00C4492F /* QuartzCore.framework */,
 				14E8831A17C3D5460002F900 /* SenTestingKit.framework */,
 				14E8835A17C502EA0002F900 /* SystemConfiguration.framework */,
 				14E882F717C3D5450002F900 /* UIKit.framework */,

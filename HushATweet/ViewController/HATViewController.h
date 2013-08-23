@@ -13,6 +13,6 @@
 #import "HATGameView.h"
 #import "HATResultsView.h"
 
-@interface HATViewController : UIViewController <HATLoginViewDelegate, HATLaunchViewDelegate, HATGameViewDelegate>
+@interface HATViewController : UIViewController <HATLoginViewDelegate, HATLaunchViewDelegate, HATGameViewDelegate, HATResultsViewDelegate>
 
 @end

@@ -375,6 +375,7 @@
 - (void) endGame
 {
     NSLog( @"INFO: Game has concluded" );
+    [self.delegate endGameWithHushTotal: self.hushTotal andScore: self.score];
 }
 
 #pragma mark - MKMapViewDelegate methods
