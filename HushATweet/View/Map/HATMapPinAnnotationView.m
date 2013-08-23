@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 Bryant Balatbat. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "HATMapPinAnnotationView.h"
 #import "HATAnnotation.h"
+
 @implementation HATMapPinAnnotationView
 {
     NSString *profileImageUrl;
