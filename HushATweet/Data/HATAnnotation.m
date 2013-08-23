@@ -20,7 +20,8 @@
 
 - (id) initWithTweet: (NSDictionary *)tweet andCoordinate: (CLLocationCoordinate2D )coordinate
 {
-    if( [self init] ) {
+    self = [super init];
+    if( self ) {
         _tweet = tweet;
         _coordinate = coordinate;
     }

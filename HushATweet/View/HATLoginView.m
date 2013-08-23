@@ -48,7 +48,7 @@
         
         self.delegate = delegate;
         
-        loginButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+        loginButton = [UIButton buttonWithType: UIButtonTypeCustom];
         [loginButton setTitle: @"Login with Twitter" forState: UIControlStateNormal];
         [loginButton setBackgroundColor: [UIColor blackColor]];
         [loginButton setTitleColor: [UIColor whiteColor] forState: UIControlStateNormal];

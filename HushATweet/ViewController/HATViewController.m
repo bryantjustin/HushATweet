@@ -66,9 +66,9 @@
 
 - (void) performLogin
 {
-    __weak HATViewController *viewController = self;
+    __unsafe_unretained HATViewController *weakSelf = self;
     [[FHSTwitterEngine sharedEngine] showOAuthLoginControllerFromViewController:self withCompletion: ^(BOOL success) {
-        [viewController onPerformLoginComplete: success];
+        [weakSelf onPerformLoginComplete: success];
     }];
 }
 

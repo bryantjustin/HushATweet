@@ -47,6 +47,6 @@
 #define FONT_SIZE_BUTTON 18.0f
 #define FONT_SIZE_SCORE 18.0f
 #define FONT_SIZE_HUSH_TOTAL 28.0f
-#define FONT_SIZE_TOPIC 14.0f
+#define FONT_SIZE_TOPIC 18.0f
 
 #endif

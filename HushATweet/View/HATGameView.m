@@ -17,7 +17,7 @@
 #pragma mark - Layout constants
 
 #define HUD_PADDING 10
-#define TOPIC_HEIGHT 60
+#define TOPIC_HEIGHT 50
 
 #pragma mark -
 
@@ -149,6 +149,7 @@
 {
     hushTotalView = [[UILabel alloc] init];
     hushTotalView.text = @"0";
+    [hushTotalView setBackgroundColor: [UIColor clearColor]];
     [hushTotalView setFont: [UIFont fontWithName: FONT_FAMILY_HELVETICA_BOLD size: FONT_SIZE_HUSH_TOTAL]];
     [hushTotalView setTextColor: [UIColor blackColor]];
     [hushTotalView setTextAlignment: NSTextAlignmentRight];
@@ -161,6 +162,7 @@
 {
     scoreView = [[UILabel alloc] init];
     scoreView.text = @"0";
+    [scoreView setBackgroundColor: [UIColor clearColor]];
     [scoreView setFont: [UIFont fontWithName: FONT_FAMILY_HELVETICA_BOLD size: FONT_SIZE_SCORE]];
     [scoreView setTextColor: [UIColor blackColor]];
     [scoreView setTextAlignment: NSTextAlignmentRight];

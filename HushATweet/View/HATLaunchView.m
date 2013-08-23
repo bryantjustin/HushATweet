@@ -92,7 +92,7 @@
 
 - (UIButton *) makeButtonWithTitle: (NSString *)title andAction: (SEL)action
 {
-    UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
     [button setBackgroundColor: [UIColor blackColor]];
     [button setTitleColor: [UIColor whiteColor] forState: UIControlStateNormal];
     [button addTarget: self action: action forControlEvents: UIControlEventTouchUpInside];
