@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@protocol HATMapPinDelegate <NSObject>
+@protocol HATMapPinAnnotationViewDelegate <NSObject>
 
 - recordTouchedPinForTweet: (NSDictionary *)tweet;
 
@@ -17,7 +17,7 @@
 
 @interface HATMapPinAnnotationView : MKAnnotationView
 
-@property (weak, nonatomic) id<HATMapPinDelegate> delegate;
+@property (weak, nonatomic) id<HATMapPinAnnotationViewDelegate> delegate;
 @property (weak, nonatomic) NSDictionary *tweet;
 @property (readonly, nonatomic) NSString *profileImageUrl;
 
